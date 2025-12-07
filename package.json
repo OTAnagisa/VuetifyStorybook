@@ -1,0 +1,52 @@
+{
+  "name": "vuetify-component-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,vue,json,css,scss,md}\""
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vuetify": "^3.5.7"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@storybook/vue3": "^7.6.17",
+    "@storybook/vue3-vite": "^7.6.17",
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitest/ui": "^1.4.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/test-utils": "^2.4.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "happy-dom": "^13.8.6",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "storybook": "^7.6.17",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vitest": "^1.4.0",
+    "vue-tsc": "^2.0.7"
+  }
+}
