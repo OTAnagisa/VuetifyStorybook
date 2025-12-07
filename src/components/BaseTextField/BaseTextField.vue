@@ -6,7 +6,14 @@ const props = withDefaults(
     /**
      * テキストフィールドのバリアント
      */
-    variant?: 'outlined' | 'filled' | 'underlined' | 'plain' | 'solo' | 'solo-inverted' | 'solo-filled'
+    variant?:
+      | 'outlined'
+      | 'filled'
+      | 'underlined'
+      | 'plain'
+      | 'solo'
+      | 'solo-inverted'
+      | 'solo-filled'
     /**
      * 入力タイプ
      */

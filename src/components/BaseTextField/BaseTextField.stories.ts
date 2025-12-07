@@ -9,7 +9,15 @@ const meta: Meta<typeof BaseTextField> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['outlined', 'filled', 'underlined', 'plain', 'solo', 'solo-inverted', 'solo-filled'],
+      options: [
+        'outlined',
+        'filled',
+        'underlined',
+        'plain',
+        'solo',
+        'solo-inverted',
+        'solo-filled',
+      ],
       description: 'テキストフィールドのバリアント',
     },
     type: {

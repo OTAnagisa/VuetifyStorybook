@@ -30,6 +30,15 @@ const preview: Preview = {
         },
       ],
     },
+    docs: {
+      source: {
+        type: 'code',
+        transform: (code: string) => {
+          // Return code as-is to avoid parsing issues
+          return code
+        },
+      },
+    },
   },
 }
 

@@ -10,10 +10,15 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: '@storybook/vue3-vite',
-    options: {},
+    options: {
+      docgen: 'vue-component-meta',
+    },
   },
   docs: {
     autodocs: 'tag',
+    source: {
+      type: 'code',
+    },
   },
   async viteFinal(config) {
     return mergeConfig(config, {
@@ -21,6 +26,9 @@ const config: StorybookConfig = {
         alias: {
           '@': '/src',
         },
+      },
+      optimizeDeps: {
+        include: ['vue', '@storybook/vue3'],
       },
     })
   },
